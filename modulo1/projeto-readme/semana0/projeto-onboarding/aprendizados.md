@@ -1,0 +1,2 @@
+                               # Aprendizados da Semana
+    Nessa semana comecei bem animado pois aulas técnicas me dão um certo frio na barriga,terminal foi bem mais tranquilo que o Git, mas a maioria diz que o Git assusta mesmo, então está valendo bora **Codarrr!!**

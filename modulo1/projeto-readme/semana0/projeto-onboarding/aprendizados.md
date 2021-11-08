@@ -1,0 +1,2 @@
+                                                       # Aprendizados da semana
+ Essa semana foi muito enriquecedora, aprendi bastante coisa com o terminal com Git e GitHub,o Git é bem complexo e com **inúmeros comandos** o que creio eu ser demorado para pegar todos os macetes rsrs, mas estou feliz pelo aprendizado.

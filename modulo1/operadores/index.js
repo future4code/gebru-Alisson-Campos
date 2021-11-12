@@ -11,7 +11,7 @@ console.log ( "Sua idade é maior que a do seu amigo ?", idade > idadeAmigo)
 console.log ("A diferença de idade é ",comparacaoidade,"anos")
 // exercício de escrita (2)
 let pedidoNumeroPar =Number( prompt("Insira um número par por favor"))
-console.log (pedidoNumeroPar % 2)
+console.log (pedidoNumeroPar % 2 === 0)
 //O padrão é que em números pares a divisão não vai ter resto, colocando números ímpares acontece o contrário
 // exercício de escrita (3)
 let idadeEmAnos = Number(prompt("Qual a sua idade em anos"))

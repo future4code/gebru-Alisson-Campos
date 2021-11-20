@@ -54,26 +54,41 @@ console.log (verificarPar(102))
  }
 Converter("hello world")
 
-function Soma (numero1,numero2){
+// function Soma (numero1,numero2){
 
-return numero1 + numero2
-}
-function Subtracao (numero1,numero2){
+// return numero1 + numero2
+// }
+// function Subtracao (numero1,numero2){
 
-    return numero1 - numero2
+//     return numero1 - numero2
+// }
+// function multiplicacao (numero1,numero2){
+//     return numero1 * numero2
+// }
+//  function divisao (numero1,numero2){
+//     return numero1 / numero2
+//  }
+//  let num1 = Number(prompt("Digite um número"))
+//  let num2 = Number(prompt("Digite outro número"))
+//  console.log (num1,num2)
+//  console.log (Soma(num1,num2))
+//  console.log (Subtracao(num1,num2))
+//  console.log (multiplicacao(num1,num2))
+//  console.log (divisao(num1,num2))
+                            //  Desafio
+const imprimi = (param)=>{
+console.log(param)
+return param
 }
-function multiplicacao (numero1,numero2){
-    return numero1 * numero2
-}
- function divisao (numero1,numero2){
-    return numero1 / numero2
+ const soma =(a,b)=>
+  somar = a + b
+ 
+ imprimi(soma(22,23))
+
+ const teorema = (cateto1,cateto2)=>{
+ let hipotenusa = Math.hypot(cateto1,cateto2)
+return hipotenusa
  }
- let num1 = Number(prompt("Digite um número"))
- let num2 = Number(prompt("Digite outro número"))
- console.log (num1,num2)
- console.log (Soma(num1,num2))
- console.log (Subtracao(num1,num2))
- console.log (multiplicacao(num1,num2))
- console.log (divisao(num1,num2))
+imprimi(teorema(4,2))
  
 

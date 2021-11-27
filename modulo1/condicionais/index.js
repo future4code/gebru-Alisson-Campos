@@ -83,94 +83,158 @@
 //     }
 const nomecompleto = prompt("Digite seu nome")
 const tipoDeJogo = prompt("Digite IN internacional e Do para nacional").toUpperCase()
-const etapajogo = prompt ("digite SF pa semi-final,Dt para 3° lugar e Fi para final").toUpperCase()
+const etapajogo = prompt ("digite SF pa semi-final,Dt para 3° lugar e FI para final").toUpperCase()
 const categoria = Number(prompt("digite uma categoria de 1 a 4"))
 let quantidadeIngresso = Number(prompt("digite a quantidade de ingressos"))
 const valor1 = [1320,880,550,220]
 const valor2 = [660,440,330,170]
 const valor3 = [1980,1320,880,330]
 
+
 switch (tipoDeJogo ==="DO" || tipoDeJogo ==="IN") {
-    case etapajogo ==="SF"||tipoDeJogo==="IN" &&  categoria === 1:
+    case etapajogo ==="SF"&&tipoDeJogo==="DO" &&  categoria === 1:
      
       console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo : Semi final categoria ${categoria}
       Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: R$ ${valor1[0]} valor total é
       :  R$ ${valor1[0] *quantidadeIngresso}`) 
         break;
-     case tipoDeJogo==="DO" ||tipoDeJogo==="IN"&& etapajogo==="SF" && categoria ===2:
+     case tipoDeJogo==="DO" && etapajogo==="SF" && categoria ===2:
        
        console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo : Semi final ${categoria}
       Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: R$ ${valor1[1]} valor total é
       :  R$ ${valor1[1] *quantidadeIngresso}`) 
         break;
-        case tipoDeJogo==="DO"|| tipoDeJogo==="IN" && etapajogo==="SF" && categoria ===3:
+        case tipoDeJogo==="DO"&& etapajogo==="SF" && categoria ===3:
        
           console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo : Semi final ${categoria}
          Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: R$ ${valor1[2]} valor total é
          :  R$ ${valor1[2] *quantidadeIngresso}`) 
            break;
-           case tipoDeJogo==="DO"||tipoDeJogo==="IN" && etapajogo==="SF" && categoria ===4:
+           case tipoDeJogo==="DO" && etapajogo==="SF" && categoria ===4:
        
             console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo : Semi final ${categoria}
            Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: R$ ${valor1[3]} valor total é
            :  R$ ${valor1[3] *quantidadeIngresso}`) 
              break;
-             case tipoDeJogo==="DO"||tipoDeJogo==="IN" && etapajogo==="DT" && categoria ===1:
+             case tipoDeJogo==="DO"&& etapajogo==="DT" && categoria ===1:
        
               console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :decisão 3° lugar, categoria : ${categoria}
              Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: R$ ${valor2[0]} valor total é
              :  R$ ${valor2[0] *quantidadeIngresso}`) 
                break;
-               case tipoDeJogo==="DO"|| tipoDeJogo==="IN" && etapajogo==="DT" && categoria ===2:
+               case tipoDeJogo==="DO" && etapajogo==="DT" && categoria ===2:
        
               console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :decisão 3° lugar , categoria :  ${categoria}
              Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: R$ ${valor2[1]} valor total é
              :  R$ ${valor2[1] *quantidadeIngresso}`) 
                break;
-               case tipoDeJogo==="DO"||tipoDeJogo==="IN" && etapajogo==="DT" && categoria ===3:
+               case tipoDeJogo==="DO" && etapajogo==="DT" && categoria ===3:
        
               console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :decisão 3° lugar, categoria :${categoria}
              Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: R$ ${valor2[2]} valor total é
              :  R$ ${valor2[2] *quantidadeIngresso}`) 
                break;
-               case tipoDeJogo==="DO"|| tipoDeJogo==="IN" && etapajogo==="DT" && categoria ===4:
+               case tipoDeJogo==="DO"&& etapajogo==="DT" && categoria ===4:
        
                 console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :decisão 3° lugar, categoria :${categoria}
                Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: R$ ${valor2[3]} valor total é
                :  R$ ${valor2[3] *quantidadeIngresso}`) 
                  break;
-                 case tipoDeJogo==="DO"|| tipoDeJogo ==="IN" && etapajogo==="FI" && categoria ===1:
+                 case tipoDeJogo==="DO" && etapajogo==="FI" && categoria ===1:
        
                 console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :A Grande Final, categoria :${categoria}
                Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: R$ ${valor3[0]} valor total é
                :  R$ ${valor3[0] *quantidadeIngresso}`) 
                  break;
-                 case tipoDeJogo==="DO"|| tipoDeJogo ==="IN" && etapajogo==="FI" && categoria ===2:
+                 case tipoDeJogo==="DO" && etapajogo==="FI" && categoria ===2:
        
                 console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :A Grande Final, categoria :${categoria}
                Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: R$ ${valor3[1]} valor total é
                :  R$ ${valor3[1] *quantidadeIngresso}`) 
                  break;
-                 case tipoDeJogo==="DO" || tipoDeJogo==="IN" && etapajogo==="FI" && categoria ===3:
+                 case tipoDeJogo==="DO"  && etapajogo==="FI" && categoria ===3:
        
                 console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :A Grande Final, categoria :${categoria}
                Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: R$ ${valor3[2]} valor total é
                :  R$ ${valor3[2] *quantidadeIngresso}`) 
                  break;
-                 case tipoDeJogo==="DO" || tipoDeJogo==="IN" && etapajogo==="FI" && categoria ===4:
+                 case tipoDeJogo==="DO"&& etapajogo==="FI" && categoria ===4:
        
                   console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :A Grande Final, categoria :${categoria}
                  Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: R$ ${valor3[3]} valor total é
                  :  R$ ${valor3[3] *quantidadeIngresso}`) 
                    break;
-                   case tipoDeJogo==="DO" || tipoDeJogo==="IN" && etapajogo==="SF" && categoria ===1:
+                   case tipoDeJogo==="IN"  && etapajogo==="SF" && categoria ===1:
        
-                    console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :A Grande Final, categoria :${categoria}
-                   Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: R$ ${valor1[0]} valor total é
-                   :  R$ ${(valor1[0] *quantidadeIngresso* 4.10)}`)
+                    console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :A Semi final, categoria :${categoria}
+                   Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: $ ${valor1[0]} valor total é
+                   :  $ ${(valor1[0] *quantidadeIngresso * 4.10)}`)
                      break;
-}
-//  aqui desisti rsrs, não sei pq meu código não desce até aqui pra dar o valor em Dólar, mas vlw msm a tentativa 
-// aprendi muito.
-
-
+                     case tipoDeJogo==="IN" && etapajogo==="SF" && categoria ===2:
+       
+                      console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo : A semi Final, categoria :${categoria}
+                     Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: $ ${valor1[1]} valor total é
+                     :  $ ${(valor1[1] * quantidadeIngresso * 4.10)}`)
+                      break ;
+                      case tipoDeJogo==="IN" && etapajogo==="SF" && categoria ===3:
+       
+                        console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :A semi final, categoria :${categoria}
+                       Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: $ ${valor1[2]} valor total é
+                       :  $ ${(valor1[2] * quantidadeIngresso * 4.10)}`)
+                        break ;
+                        case tipoDeJogo==="IN" && etapajogo==="SF" && categoria ===4:
+       
+                        console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :A semi final, categoria :${categoria}
+                       Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: $ ${valor1[3]} valor total é
+                       :  $ ${(valor1[3] * quantidadeIngresso * 4.10)}`)
+                        break ;
+                        case tipoDeJogo==="IN" && etapajogo==="DT" && categoria ===1:
+       
+                          console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :A Decisão do 3°, categoria :${categoria}
+                         Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: $ ${valor2[0]} valor total é
+                         :  $ ${(valor2[0] * quantidadeIngresso * 4.10)}`)
+                          break ;
+                          case tipoDeJogo==="IN" && etapajogo==="DT" && categoria ===2:
+       
+                          console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :A Decisão do 3°, categoria :${categoria}
+                         Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: $ ${valor2[1]} valor total é
+                         :  $ ${(valor2[1] * quantidadeIngresso * 4.10)}`)
+                          break ;
+                          case tipoDeJogo==="IN" && etapajogo==="DT" && categoria ===3:
+       
+                            console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :A Decisão do 3°, categoria :${categoria}
+                           Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: $ ${valor2[2]} valor total é
+                           :  $ ${(valor2[2] * quantidadeIngresso * 4.10)}`)
+                            break ;
+                            case tipoDeJogo==="IN" && etapajogo==="DT" && categoria ===4:
+       
+                            console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :A Decisão do 3°, categoria :${categoria}
+                           Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: $ ${valor2[3]} valor total é
+                           :  $ ${(valor2[3] * quantidadeIngresso * 4.10)}`)
+                            break ;
+                            case tipoDeJogo==="IN" && etapajogo==="FI" && categoria ===1:
+       
+                            console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :A Grande Final, categoria :${categoria}
+                           Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: $ ${valor3[0]} valor total é
+                           :  $ ${(valor3[0] * quantidadeIngresso * 4.10)}`)
+                            break ;
+                            case tipoDeJogo==="IN" && etapajogo==="FI" && categoria ===2:
+       
+                            console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :A Grande Final, categoria :${categoria}
+                           Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: $ ${valor3[1]} valor total é
+                           :  $ ${(valor3[1] * quantidadeIngresso * 4.10)}`)
+                            break ;
+                            case tipoDeJogo==="IN" && etapajogo==="FI" && categoria ===3:
+       
+                            console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :A Grande Final, categoria :${categoria}
+                           Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: $ ${valor3[2]} valor total é
+                           :  $ ${(valor3[2] * quantidadeIngresso * 4.10)}`)
+                            break ;
+                            case tipoDeJogo==="IN" && etapajogo==="FI" && categoria ===4:
+       
+                            console.log (`Nome do Cliente: ${nomecompleto} etapa do jogo :A Grande Final, categoria :${categoria}
+                           Quantidade de ingresso: ${quantidadeIngresso} valor do ingresso: $ ${valor3[3]} valor total é
+                           :  $ ${(valor3[3] * quantidadeIngresso * 4.10)}`)
+                            break ;
+                    
+                            }

@@ -114,6 +114,25 @@ const filtrarCategoria = produtos.filter((item,index,array)=>{
 
     const BuscaYpe = produtos.filter (produtos=>produtos.nome.includes("Ypê"))
     console.log (BuscaYpe)
+ 
+
+    const SomenteNome = produtos.map((item)=>{
+    return item.nome 
+    })
+    console.log (SomenteNome)
+
+    const NomePrecoDesconto = produtos.map(produtos=>{
+        let desconto = produtos.preco * 0.05
+        const objeto = {
+        nome:produtos.nome,
+        preco:produtos.preco - desconto,
+        }
+        return objeto
+    })
+    console.log(NomePrecoDesconto)
+
+    const bebidaObjeto = produtos.filter(produtos=> produtos.categoria.includes("Bebidas"))
+    console.log(bebidaObjeto)
 
     const propaganda = BuscaYpe.map(produto=>
         `Compre ${produto.nome} por ${produto.preco}`
@@ -121,25 +140,5 @@ const filtrarCategoria = produtos.filter((item,index,array)=>{
     )
     console.log(propaganda)
 
-    const SomenteNome = produtos.map((item)=>{
-        return item.nome 
-        })
-        ArrayNome = SomenteNome
-        console.log (ArrayNome)
 
 
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
- 

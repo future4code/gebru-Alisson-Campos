@@ -1,0 +1,14 @@
+                                             Exercício Resolvendo Problemas
+
+
+
+
+A parte mais importante que acho no que me foi passado no vídeo, é a questão de prestar atenção no enunciado com certeza,
+já fiquei nervoso só de ver que o enunciado era grande, mas como a Tay mesmo diz o código ter q ser feito por etapas e isso
+me ajudou muito.
+gosto também de pegar as pequenas partes importantes para raciocinar, tipo as ações e nomes que posso usar nas variáveis 
+e funções.
+saber qual vai ser a entrada e saída do código também é um passo fundamental para que o código funcione.
+Imaginar o que iremos fazer e traçar um caminho visual ou falar alto aquilo ajuda muito também.
+O "o código feio " vai ajudar a fazer ele mais rápido mas não pode ser o sufuciente em matéria de performance e bons usos.
+A parte de refatoraçã onada mais é do que pensar uma maneira mais lógica e objetiva em que vai demandar menos trabalhos futuros e também vai ajudar a desenvolver a lógica de programção.

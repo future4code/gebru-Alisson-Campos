@@ -8,6 +8,10 @@
     margin: 0;
     padding: 0;
     
+    
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h2 {
@@ -54,9 +58,10 @@ div img {
 }
 
 .container {
-    height: 150px;
+    height: 200px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 50px 50px ;
+    margin-bottom: 65px;
 }
 
 .icone {
@@ -139,6 +144,8 @@ td button {
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    text-align: center;
+    display: block;
 }
 
 #back-button:hover {
@@ -153,4 +160,10 @@ background-color: #fe7e02;
 }
 button:active {
     color: white;
+}
+input:hover {
+    opacity: 50%;;
+}
+input:active:checked {
+    border: solid black;
 }

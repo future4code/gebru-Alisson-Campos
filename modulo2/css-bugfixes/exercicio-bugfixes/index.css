@@ -142,3 +142,7 @@ td button {
 #back-button:hover {
     background-color: #635a3d
 }
+.icone  {
+    width: 29px;
+    height: 29px;
+}

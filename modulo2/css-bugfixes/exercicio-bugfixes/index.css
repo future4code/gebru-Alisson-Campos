@@ -146,3 +146,9 @@ td button {
     width: 29px;
     height: 29px;
 }
+button:hover {
+background-color: #fe7e02;
+}
+button:active {
+    color: white;
+}

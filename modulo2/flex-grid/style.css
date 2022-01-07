@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bolinho {
+    width: 22px;
+
+}
+header {
+    height: 15vh;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+.botão {
+    display: flex;
+    justify-content: space-between;
+}
+.confeitaria {
+    display: flex;
+    justify-content: space-around;
+}

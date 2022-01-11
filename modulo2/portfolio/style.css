@@ -1,0 +1,103 @@
+body,ul,li,p {
+    margin: 0px ;
+    padding: px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Roboto;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 8px;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+img {
+    max-width: 100%;
+    display: flexbox;
+}
+.header {
+    background-color: #1d1e20;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px ;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu {
+    color: whitesmoke;
+    display: flex;
+}
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+   display: block; 
+}
+.inicio {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Roboto;
+}
+.inicio > div {
+    flex: 1 1 200px;
+    margin: 10px;
+    
+}
+footer {
+    margin: 0px auto ;
+    padding: 10px;
+    list-style: none;
+    font-size: 0.9rem;
+    font-family: cursive;
+    background-color: #1d1e20;
+    color: whitesmoke;
+    text-align: center;
+}
+.sobre-mim {
+    font-family: cursive;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    margin-bottom: 30px;
+}
+.texto-imagem {
+    font-family: cursive;
+    text-align: center;
+}
+.imagem-sobre {
+    border-radius: 20%;
+}
+.projetos {
+    margin-top: 25px;
+}
+.pescaria {
+text-align: center;
+font-size: 15px;
+font-family: sans-serif;
+margin-top: 12px;
+}
+.imagem-contato {
+    width: 180px;
+    display: flex;
+    margin-bottom: 150px;
+}
+.contato {
+    text-align: justify;
+    display:  flex;
+    height: 18%;
+    width: 10px;
+    margin-left: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.final {
+    display: flex;
+    justify-content: center;
+    margin-top: 203px;
+}

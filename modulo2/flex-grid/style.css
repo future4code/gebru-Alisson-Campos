@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    background-color: mediumvioletred;
+    height: 1.5em;
+    padding: 10px;
+    border: solid beige;
+}
+.imagem-texto{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    
+}
+.confeitaria {
+    padding-left: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+.opcoes {
+    display: flex;
+    background-color: #f2d0e0;
+    border: solid   beige;
+    height: 80vh;
+    width: 120px;
+}
+.imagem-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 30px; 
+    
+}

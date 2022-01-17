@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nome-busca {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+header {
+    background-color: rgb(230, 19, 19)   ;
+    color: whitesmoke;
+}
+header button {
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width:  10%;
+    text-align: start;
+}
+.imagem {
+   width: 12rem;
+   height: 12rem;
+   border-radius: 10%; 
+}
+.grade-videos {
+    display: grid;
+    justify-content: center;
+    margin-top: 25px;
+    align-items: center;
+    text-align: center;
+    row-gap: 1px;
+    grid-template-columns: repeat(4,16%);
+    font-family: cursive;
+    flex-wrap: wrap;
+    position: relative;
+}
+footer {
+    display: flex;
+    text-align: start;
+    background-color: black;
+    color: whitesmoke;
+    padding: 25px;
+    margin-top: 150px;
+}
+.grade-videos2 {
+    display: grid;
+    justify-content: center;
+    margin-top: 25px;
+    align-items: right;
+    text-align: start;
+    row-gap: 250px;
+    font-family: cursive;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+div h2 {
+    margin-bottom: -50px;
+}
+#voltar {
+    padding: 8px;
+    display: flex;
+    width: 45px;
+}
+

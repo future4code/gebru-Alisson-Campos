@@ -1,0 +1,12 @@
+.email {
+    display: flex;
+    justify-content: start;
+    border: black solid 1px;
+    align-items: center;
+    padding: 10px;
+    width: 87vh;
+}
+
+img {
+    width: 5vh;
+}

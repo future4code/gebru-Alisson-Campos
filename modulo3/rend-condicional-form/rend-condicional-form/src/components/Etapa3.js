@@ -34,7 +34,7 @@ class Etapa3 extends React.Component {
                         <option value="curso técnico">Curso Técnico</option>
                         <option value="curso de inglês">Curso de Inglês</option>
                     </select>
-                    <button>Próxima etapa</button>
+                   
                 </Label>
             </Container>
 

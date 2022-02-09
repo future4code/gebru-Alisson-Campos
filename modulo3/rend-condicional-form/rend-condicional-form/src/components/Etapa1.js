@@ -1,6 +1,7 @@
 
 import React from 'react'
 import styled from 'styled-components';
+import App from '../App';
 
 const Container = styled.div`
 display: flex;
@@ -17,6 +18,9 @@ flex-direction: column;
 margin-top: 2%;
  
 `
+const Select = styled.select `
+margin-top: 4%
+`
 
 
 class Etapa1 extends React.Component {
@@ -31,16 +35,17 @@ class Etapa1 extends React.Component {
                     <input />
 
                     <label >1. Qual o seu Nome</label>
-                    <input placeholder='Qual o seu Nome'/>
+                    <input placeholder='Qual o seu Nome' />
                     <label >1. Qual a sua Escolaridade ?</label>
                     <input placeholder='Qual a sua Escolaridade ?' />
-                    <select name='escolaridade'>
+                    <Select name='escolaridade'>
                         <option value="Médio incompleto">Médio incompleto</option>
                         <option value="Médio completo">Médio completo</option>
                         <option value="Superior incompleto">Superior incompleto</option>
                         <option value="Superior completo">Superior completo</option>
-                    </select>
-                    <button>Próxima etapa</button>
+                    </Select>
+
+
                 </Label>
             </Container>
 

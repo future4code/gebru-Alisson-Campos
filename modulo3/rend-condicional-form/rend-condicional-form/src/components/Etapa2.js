@@ -27,7 +27,7 @@ class Etapa2 extends React.Component {
                     <input />
                     <label>2. Qual a unidade de ensino?</label>
                     <input />
-                    <button>Próxima etapa</button>
+                    
                 </Label>
             </Container>
 

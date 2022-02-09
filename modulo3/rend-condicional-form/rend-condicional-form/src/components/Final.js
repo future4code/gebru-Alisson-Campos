@@ -13,7 +13,7 @@ class Final extends React.Component {
         return (
             <Container>
                 <h2> O FORMULÁRIO ACABOU</h2>
-                <p>Muito obrigado por participar! Entraremos em contato!</p>
+                <p>Muito obrigado por participar, entraremos em contato!</p>
             </Container>
 
         )

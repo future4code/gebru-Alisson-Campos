@@ -1,0 +1,15 @@
+
+
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    background-color: aquamarine;
+    padding: 20px;
+    width: 250px;
+    border: solid black 1px;
+    margin-left: 50%;
+    font-weight: bold;
+    font-family: fantasy;
+}

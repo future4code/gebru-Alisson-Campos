@@ -1,5 +1,29 @@
 import React from "react";
 import axios from "axios"
+import styled from "styled-components"
+const Box = styled.div `
+ display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: aquamarine;
+    padding: 40px;
+    width: 420px;
+    border: solid black 1px;
+    margin-left: 30%;
+    font-family: fantasy;`
+
+const Botao = styled.button`
+display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: black;
+   background-color: whitesmoke;
+   padding: 10px;
+   width: auto;
+   border: solid black 1px;
+   margin-left: 0,5%;
+   font-family: fantasy;`
 
 class CadastroUsuario extends React.Component {
     state = {
@@ -32,17 +56,17 @@ class CadastroUsuario extends React.Component {
     }
     render() {
         return (
-            <div>
+            <Box>
                 <h2>Tela de Cadastro de Usuário</h2>
                 <div>
                     <input onChange={this.mudaNomeInput}
                         placeholder="Insira seu Nome" value={this.state.nameInput} />
                     <input onChange={this.mudaEmailInput}
                         placeholder="Insira seu Email" value={this.state.emailInput} />
-                    <button onClick={this.createUser}>Cadastrar</button>
+                    <Botao onClick={this.createUser}>Cadastrar</Botao>
                 </div>
-                <button onClick={this.props.irParaTelaUsuarios}>Ir Para Lista de Pessoas</button>
-            </div>
+                <Botao onClick={this.props.irParaTelaUsuarios}>Ir Para Lista de Pessoas</Botao>
+            </Box>
         )
     }
 }

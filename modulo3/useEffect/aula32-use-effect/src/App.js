@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./styles.css";
+import axios from "axios";
+import PokeCard from "./components/PokeCard/PokeCard";
 
-function App() {
+
+const App = (props) => {
+  const [pokeList, setPokelist] = useState([])
+  const [pokeName, setPokeName] = useState("")
+ 
+  useEffect(() => {
+    pegaPokemon()
+  }, [])
+
+  const pegaPokemon = () => {
+    axios
+      .get("https://pokeapi.co/api/v2/pokemon/?limit=151")
+      .then(response => {
+        
+        setPokelist({ pokeList: response.data.results });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }
+
+
+  const changePokeName = event => {
+    setPokeName(event.target.value);
+  };
+
+
   return (
-    <div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App">
+      
+      <select onChange={changePokeName}>
+        <option value={""}>Nenhum</option>
+        
+        {pokeList.map(pokemon => {
+          return (
+            <option key={pokemon.name} value={pokemon.name}>
+              {pokemon.name}
+            </option>
+          );
+        })}
+      </select>
+      
+      {pokeName && <PokeCard pokemon={pokeName} />}
     </div>
   );
+
 }
 
 export default App;

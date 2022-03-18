@@ -14,7 +14,7 @@ const PokeCard = (props) => {
             .get(`https://pokeapi.co/api/v2/pokemon/${pokeName}`)
             .then(response => {
                 
-                setPoke({ pokemon: response.data });
+                setPoke(response.data );
             })
             .catch(err => {
                 console.log(err);

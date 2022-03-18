@@ -17,7 +17,7 @@ const App = (props) => {
       .get("https://pokeapi.co/api/v2/pokemon/?limit=151")
       .then(response => {
         
-        setPokelist({ pokeList: response.data.results });
+        setPokelist( response.data.results );
       })
       .catch(err => {
         console.log(err);

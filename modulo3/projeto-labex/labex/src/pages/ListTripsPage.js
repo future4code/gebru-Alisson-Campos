@@ -1,14 +1,11 @@
 
 import styled from 'styled-components'
 import axios from 'axios'
-import Router from './routes/Router'
-
 
 const App = () => {
   return (
     <div>
-     <Router/>
-
+      <h3>Home</h3>
     </div>
   )
 

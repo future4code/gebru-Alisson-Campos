@@ -1,15 +1,18 @@
 
+import React from 'react'
 
 import axios from 'axios'
 
-const App = () => {
+
+const HomePage = () => {
+
   return (
     <div>
-      <h3>Home</h3>
+      <h3>Home </h3>
+
     </div>
+
   )
-
-
 }
 
-export default App;
+export default HomePage;

@@ -156,7 +156,6 @@ function filtraTarefas() {
 
                                                    PARTE 3
 
-
 // COMPARADORES
 // Exercício 1------------------------------------------------------------------------------------
 
@@ -204,16 +203,15 @@ const cadastro = () => {
     const anoAtual = dataAtual.getFullYear()
     const usuario = []
     const nomeDoUsario = prompt("Qual o seu nome ?")
-    const anoDeNascimento = Number(prompt("Digite seu ano de nascimento"), Number.length(anoDeNascimento))
-
+    const anoDeNascimento = Number(prompt("Digite seu ano de nascimento"))
     const senhaDoUsuario = Number(prompt("digite sua senha"))
     const nacionalidade = prompt("Qual a sua nacionalidade ?")
-    if (anoAtual - anoDeNascimento < 18) {
+    if (anoAtual - anoDeNascimento >= 18) {
         return usuario.push(nomeDoUsario, anoDeNascimento)
     } else {
         return alert("Você é menor de idade")
     }
-    if (anoDeNascimento === 5) {
+    if (anoDeNascimento.toString().length === 5) {
         return usuario.push(nomeDoUsario, senhaDoUsuario)
     } else {
         return alert("Digite uma senha de 6 dígitos")
@@ -245,6 +243,20 @@ console.log(login());
 // Exercício 5----------------------------------------------------------------------------------------------------
 
 const primeiraDose = () => {
+const nome = prompt("|Digite seu nome")
+const vacina = prompt("Qual a vacina que você tomou ?")
+let tempo = ""
+let data = anoAtual
+for (tempo = anoAtual;vacina = "Coronavac";anoAtual + 28){
+    if (vacina = "Coronavac") {
+        alert (`Olá ${nome} A próxima dose da ${vacina} é daqui a 28 dias compareça no posto no dia ${anoAtual + 28}`)
+    } if (vacina = "Astrazenica") {
+        alert (`Olá ${nome} A próxima dose da ${vacina} é daqui a 90 dias compareça no posto no dia ${anoAtual + 90}`)
+    }if (vacina = "Pfizer "){
+        alert (`Olá ${nome} A próxima dose da ${vacina} é daqui a 90 dias compareça no posto no dia ${anoAtual + 90}`)
+    }
+}
+
 
     //  Sua lógica aqui
 
@@ -263,12 +275,14 @@ const segundaDose = (nomeDoUsuario) => {
         { nome: "Barbara", imunizacao: "incompleta" },
         { nome: "Carlos", imunizacao: "incompleta" }
     ]
-
-    //  Sua lógica aqui
-
-
+const validaDose = usuarios.map((status)=> {
+if (status.imunizacao === "incompleta") {
+    return status.imunizacao = "completa"
 }
-console.log(segundaDose("Barbara"));
+})
+    //  Sua lógica aqui
+}
+console.log(segundaDose(validaDose("Barbara")));
 
 // Exercício 7 --------------------------------------------------------------------------------------
 
@@ -278,69 +292,17 @@ const avisoAosAtrasados = () => {
         { nome: "Barbara", imunizacao: "completa" },
         { nome: "Carlos", imunizacao: "incompleta" }
     ]
-
-    //  Sua lógica aqui
-
-}
-console.log(avisoAosAtrasados());
-
-
-// DESAFIO------------------------------------------------------------------------------------------
-
-const usuarios = [
-    {
-        nome: "Artur",
-        ano: 2000,
-        nacionalidae: "brasileiro",
-        senha: "123456",
-        vacina: "pfizer",
-        imunizacao: "incompleta"
-    },
-    {
-        nome: "Bárbara",
-        ano: 1984,
-        nacionalidae: "brasileira",
-        senha: "labenu",
-        vacina: "astrazenica",
-        imunizacao: "completa"
-    },
-    {
-        nome: "Carlos",
-        ano: 2000,
-        nacionalidae: "brasileiro",
-        senha: "123456",
-        vacina: "coronavac",
-        imunizacao: "incompleta"
+    const validaAtraso = usuarios.map((status)=>{
+        if (status.imunizacao === "incompleta"){
+            return `Olá ${status.nome} sua imunização está ${status.imunizacao}
+             por favor volte ao postinho para tomar a segunda dose.`
+        }
+    })
     }
 
-]
-
-const cadastro = () => {
     //  Sua lógica aqui
-}
-console.log(cadastro());
-
-const login = () => {
-    //  Sua lógica aqui
-}
-console.log(login());
-
-const primeiraDose = () => {
-    //  Sua lógica aqui
-}
-console.log(primeiraDose())
-const segundaDose = (nomeDoUsuario) => {
-    //  Sua lógica aqui
-}
-console.log(segundaDose("ALGUM NOME AQUI"));
-
-const avisoAosAtrasados = () => {
-    //  Sua lógica aqui
-}
-console.log(avisoAosAtrasados());
 
 
+console.log(avisoAosAtrasados(validaAtraso()));
 
 
-
-   

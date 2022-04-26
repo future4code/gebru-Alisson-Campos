@@ -43,10 +43,11 @@ menu()
 const vitrine = () => {
 
     const pergunta2 = prompt("1- Alimentos \n 2-Brinquedos")
-    if (pergunta2 === 1) {
+    if (pergunta2 == 1) {
         alimentos.map((dado) => {
             return console.log(`Esses são os alimentos disponíveis ${dado.nome}`)
         })
+        return(alimentos)
     }
 }
 vitrine()

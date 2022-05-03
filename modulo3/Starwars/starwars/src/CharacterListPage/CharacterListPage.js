@@ -3,7 +3,8 @@ import axios from "axios"
 import BASE_URL from "../constants/constants";
 import CharacterCard from "./CharacterListPageStyles";
 
-const CharacterListPage = () => {
+
+const CharacterListPage = (props) => {
     const [characterList, setCharacterList] = useState([])
     useEffect(() => {
         getCharacterList()
@@ -15,9 +16,10 @@ const CharacterListPage = () => {
     }
     const showCharacters = () => {
         return characterList.map((character, index) => {
-            return <CharacterCard key={index}>{character.name}</CharacterCard>
+            return <CharacterCard onClick={ () =>props.goToDetailsPage(character.url)} key={index}>{character.name}</CharacterCard>
         })
     }
+
 
     return (
         <div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CharacterCard from "./CharacterListPageStyles";
 import {getCharacterList} from "../services/requests"
+import { Background } from "./CharacterListPageStyles";
 
 const CharacterListPage = (props) => {
     const [characterList, setCharacterList] = useState([])
@@ -16,10 +17,10 @@ const CharacterListPage = (props) => {
 
 
     return (
-        <div>
+        <Background>
             <h1>Lista de Personagens</h1>
             {showCharacters()}
-        </div>
+        </Background>
     )
 }
 export default CharacterListPage

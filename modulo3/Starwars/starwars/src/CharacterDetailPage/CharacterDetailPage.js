@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getCharacterDetails, getPlanetDetails } from "../services/requests";
+import { Background , Botao} from "../CharacterListPage/CharacterListPageStyles";
 
 const CharacterDetailPage = (props) => {
     const [details, setDetails] = useState({})
@@ -15,7 +16,7 @@ const CharacterDetailPage = (props) => {
 
 
     return (
-        <div>
+        <Background>
             <h1>Detalhes do Personagens</h1>
             {details.name && planet.name ?
             <div>
@@ -23,8 +24,8 @@ const CharacterDetailPage = (props) => {
             <p>Planeta de Origem: {planet.name}</p>
             </div> : <p>Aguarde um momento</p>}
             
-            <button onClick={props.goToListPage}> Voltar para a lista de Personagens</button>
-        </div>
+            <Botao onClick={props.goToListPage}> Voltar para a lista de Personagens</Botao>
+        </Background>
     )
 }
 export default CharacterDetailPage

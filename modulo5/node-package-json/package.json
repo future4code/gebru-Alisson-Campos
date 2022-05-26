@@ -1,0 +1,13 @@
+{
+  "name": "node-package-json",
+  "version": "1.0.0",
+  "description": "1° exercício backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "clear && node index.js"
+  },
+  "keywords": [],
+  "author": "Alisson F Campos",
+  "license": "ISC"
+}

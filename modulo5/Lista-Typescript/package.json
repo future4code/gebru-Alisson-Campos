@@ -1,0 +1,16 @@
+{
+  "name": "Lista-Typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^4.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "tsc && node ./build/exercicio1.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
